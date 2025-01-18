@@ -1,5 +1,7 @@
 # Super Slab UI Extension
 
+![image](https://github.com/user-attachments/assets/0907277e-4bd0-4030-869c-8d53e2eb6e3a)
+
 ## Disclaimer
 I have no affiliation with Prong or SuperSlab. Use this at your own risk! 
 
