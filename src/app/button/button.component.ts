@@ -21,8 +21,11 @@ export class ButtonComponent {
   @Input() buttonData: ButtonData | undefined;
   @Input() rotated = false;
   labelChanged(event: Event) {
+    if (!this.buttonData) {
+      return;
+    }
     const selectElement = event?.target as HTMLSelectElement;
-    console.log(selectElement.value);
+    this.slabService.updateCurrentConfiguration(this.buttonData.id, parseInt(selectElement.value));
   }
   constructor(private slabService: SlabService) {}
 }

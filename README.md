@@ -1,27 +1,26 @@
-# SlabUi
+# Super Slab UI Extension
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+## Disclaimer
+I have no affiliation with Prong or SuperSlab. Use this at your own risk! 
 
-## Development server
+## Installing
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The extension lives in the ext folder. Go to the extensions page of your Chromium-based browser (likely chrome://extensions) and then turn on developer mode. This should make a "Load unpacked" button appear. Click that button, then select the ext folder as your unpacked extension. The extension is setup to only be active at http://192.168.120.240/.
 
-## Code scaffolding
+## Usage/How it works
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+When you navigate to the page, this code makes a request for the button mapping for the current profile. Any edits you make will not persist until you hit "Commit".
 
-## Build
+### Changing profiles
+To change profiles, change the profile in the standard UI, then hit "Refresh" in the extension UI. If you don't do this and then you hit "Commit" your setup for the new profile will be overwritten.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Copying button mappings to another profile
+To copy, first go to the profile you want to copy from (and refresh), hit "Copy", then change profiles to where you want to paste (and hit refresh), then hit paste. Confirm that this is what you want or make any changes, then hit commit.
 
-## Running unit tests
+## Building
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+If you want to hack on top of this, make your edits in the src folder, then run
 
-## Running end-to-end tests
+```npm run build-extension```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This will build your files and place them into the ext folder. You should then refresh the extension in your extensions page.

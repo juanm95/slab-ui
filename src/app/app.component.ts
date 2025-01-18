@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SlabComponent } from './slab/slab.component';
+import { SlabService } from './slab.service';
 
 @Component({
   selector: '#angular-app',
@@ -12,10 +13,6 @@ import { SlabComponent } from './slab/slab.component';
 export class AppComponent {
   title = 'slab-ui';
 
-  currentConfiguration = {};
-
-  async setCurrentConfiguration() {
-    const response = await fetch('http://192.168.120.240/api/getButtonMapping');
-    console.log(response);
+  constructor() {
   }
 }

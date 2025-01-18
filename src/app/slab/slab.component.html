@@ -1,7 +1,12 @@
+<button (click)="refresh()">Refresh (After changing profiles)</button>
+<button (click)="commit()">Commit</button>
+<button (click)="copy()">Copy</button>
+<button (click)="paste()">Paste</button>
+
 <div class="slab">
   <div class="left-side">
-    <app-button-group [buttonRows]="leftButtonGroup[0]"></app-button-group>
-    <app-button-group [buttonRows]="leftButtonGroup[1]"></app-button-group>
+    <app-button-group [buttonRows]="leftButtonGroups[0]"></app-button-group>
+    <app-button-group [buttonRows]="leftButtonGroups[1]"></app-button-group>
   </div>
   <div class="right-side">
     <app-button-group [buttonRows]="rightButtonGroups[0]"></app-button-group>

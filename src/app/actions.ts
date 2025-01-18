@@ -50,3 +50,11 @@ export const Actions = {
     value: 125,
   },
 };
+
+export const valueToAction: { [number: number]: SlabAction} = {};
+
+export const allActions = Object.values(Actions);
+
+Object.values(Actions).forEach((action: SlabAction) => {
+  valueToAction[action.value] = action;
+});

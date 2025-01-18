@@ -5,7 +5,7 @@
   // Create a root element for the Angular app
   const appRoot = document.createElement("div");
   appRoot.id = "angular-app";
-  document.body.appendChild(appRoot);
+  document.querySelector(".container-fluid.body-content > div").appendChild(appRoot);
 
   // Load Angular app scripts dynamically
   const angularFiles = [
