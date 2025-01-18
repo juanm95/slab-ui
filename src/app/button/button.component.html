@@ -1,0 +1,9 @@
+@if(buttonData) {
+<div class="circle">
+  <select (change)="labelChanged($event)" [ngClass]="{'rotated': rotated}">
+    @for (action of buttonData.actions; track $index) {
+      <option value="{{action.value}}" [selected]="action.value === buttonData.selectedAction.value">{{action.label}}</option>
+    }
+  </select>
+</div>
+}

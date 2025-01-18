@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/slab/slab.component.css"],
+  "sourcesContent": ["/* circle-ui.component.css */\n\n.slab {\n  display: flex;\n  flex-direction: row;\n  gap: 16px;\n  padding: 16px;\n  border-radius: 8px;\n  background-color: #fff;\n  border-style: solid;\n  justify-content: space-evenly;\n\n  div {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  \n  .left-side {\n    align-items: end;\n  }\n\n  .right-side {\n    align-items: start;\n  }\n\n  .rotated {\n    margin-top: 50px;\n    margin-bottom: 100px;\n    transform: rotate(-45deg);\n  }\n}\n\n"],
+  "mappings": ";AAEA,CAAC;AACC,WAAS;AACT,kBAAgB;AAChB,OAAK;AACL,WAAS;AACT,iBAAe;AACf,oBAAkB;AAClB,gBAAc;AACd,mBAAiB;AAqBnB;AA7BA,CAAC,KAUC;AACE,WAAS;AACT,kBAAgB;AAChB,mBAAiB;AACnB;AAdF,CAAC,KAgBC,CAAC;AACC,eAAa;AACf;AAlBF,CAAC,KAoBC,CAAC;AACC,eAAa;AACf;AAtBF,CAAC,KAwBC,CAAC;AACC,cAAY;AACZ,iBAAe;AACf,aAAW,OAAO;AACpB;",
+  "names": []
+}

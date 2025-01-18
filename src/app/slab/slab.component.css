@@ -1,0 +1,33 @@
+/* circle-ui.component.css */
+
+.slab {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  border-style: solid;
+  justify-content: space-evenly;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .left-side {
+    align-items: end;
+  }
+
+  .right-side {
+    align-items: start;
+  }
+
+  .rotated {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    transform: rotate(-45deg);
+  }
+}
+

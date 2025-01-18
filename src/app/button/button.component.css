@@ -1,0 +1,21 @@
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    select {
+        width: 95%;
+        flex-grow: 0;
+        height: 30px;
+        text-align: center;
+        border: none;
+        background-color: whitesmoke;
+
+        &.rotated {
+            transform: rotate(45deg);
+        }
+    }
+}

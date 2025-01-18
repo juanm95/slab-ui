@@ -1,0 +1,7 @@
+@for (buttonRow of buttonRows; track $index) {
+    <div class="button-row">
+    @for(button of buttonRow; track $index) {
+    <app-button [buttonData]="button" [rotated]="rotated"></app-button>
+    }
+    </div>
+}

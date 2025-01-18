@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/button/button.component.css"],
+  "sourcesContent": [".circle {\n    width: 200px;\n    height: 200px;\n    border-radius: 50%;\n    border-style: solid;\n    display: flex;\n    align-items: center;\n    select {\n        flex-grow: 0;\n        height: 30px;\n        text-align: center;\n        border: none;\n        background-color: whitesmoke;\n\n        &.rotated {\n            transform: rotate(45deg);\n        }\n    }\n    /* select {\n        transform: rotate(-45deg);\n    } */\n}"],
+  "mappings": ";AAAA,CAAC;AACG,SAAO;AACP,UAAQ;AACR,iBAAe;AACf,gBAAc;AACd,WAAS;AACT,eAAa;AAejB;AArBA,CAAC,OAOG;AACI,aAAW;AACX,UAAQ;AACR,cAAY;AACZ,UAAQ;AACR,oBAAkB;AAKtB;AAjBJ,CAAC,OAOG,MAOK,CAAC;AACE,aAAW,OAAO;AACtB;",
+  "names": []
+}
